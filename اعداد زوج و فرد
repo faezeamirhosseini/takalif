@@ -1,0 +1,55 @@
+using System;
+
+namespace tamrin1
+{
+    class program
+    {
+        public static void Main(string[] args){ //adad zoj va far
+            Console.Write("Vared Konid 2 adad");
+
+            double x = Convert.ToDouble(Console.ReadLine());
+
+
+
+            calc(x);
+
+
+
+
+
+        }
+        private static void calc(double x)
+        {
+           
+            double p =1;
+            double sum = 0;
+            if ( x != 0)
+            {
+                if (x % 2 == 0)
+                {
+                    for (double i = 0; i <= x; i++)
+                    {
+                        sum = sum + i;
+                        p = p * i;
+                    }
+                }
+                else
+                {
+                    for (double i = 0; i <= x; i++)
+                    {
+                        sum = sum + i;
+
+                    }
+                }
+            } else
+            {
+                Console.Write("does not exist");
+            }
+            
+            Console.WriteLine(sum);
+            Console.WriteLine(p);
+        }
+
+
+    }
+}
