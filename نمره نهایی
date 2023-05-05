@@ -1,0 +1,32 @@
+using System;
+
+namespace tamrin1
+{
+    class program
+    {
+        public static void Main(string[] args) //nomre nahayee
+        {
+            Console.WriteLine("Vared Konid Mianterm");
+            double x = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Vared Konid Payanterm");
+            double y = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Nomre Nahayi  " + Nomre(x,y));
+            if (Nomre(x, y) > 10)
+            {
+                Console.WriteLine("you pass");
+            } else
+            {
+                Console.WriteLine("you fail");
+            }
+
+        }
+        private static double Nomre (double x, double y)
+        {
+            double a = x * 35 / 100;
+            double b = y * 65 / 100;
+            double z = a + b;
+            return z;
+        }
+        
+    }
+}
