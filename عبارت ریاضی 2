@@ -1,0 +1,22 @@
+using System;
+
+namespace tamrin1
+{
+    class program
+    {
+        public static void Main(string[] args) //ebarat riazi sqrt(abs(x)+y^2)
+        {
+            Console.WriteLine("Enter Number");
+            double x = Convert.ToDouble(Console.ReadLine());
+            double y= Convert.ToDouble(Console.ReadLine());
+            ebarat(x,y);
+
+        }
+        private static void ebarat(double x , double y)
+        {
+            Console.WriteLine(Math.Sqrt(Math.Abs(x) + Math.Pow(y,2)));
+
+        }
+
+    }
+}
