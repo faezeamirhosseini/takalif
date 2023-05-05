@@ -1,0 +1,21 @@
+using System;
+
+namespace tamrin1
+{
+    class program
+    {
+        public static void Main(string[] args) //ebarat riazi x^2+2x-4
+        {
+            Console.WriteLine("Enter Number");
+            double x = Convert.ToDouble(Console.ReadLine());
+            Ebarat(x);
+
+        }
+        private static void Ebarat (double x)
+        {
+            Console.WriteLine( "Resault is = " + (Math.Pow(x, 2) + 2 * x - 4));
+            
+        }
+           
+    }
+}
