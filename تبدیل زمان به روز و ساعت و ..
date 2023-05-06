@@ -1,0 +1,31 @@
+using System;
+
+namespace tamrin1
+{
+    class program
+    {
+        public static void Main(string[] args) //roz-saat-minute
+        {
+            Console.WriteLine("Enter second");
+            int x = Convert.ToInt32(Console.ReadLine());
+            ebarat(x);
+            
+            
+
+        }
+        private static void ebarat(int x)
+        {
+            int day = x / (24 * 60 * 60);
+            int modeday = x % (24 * 60 * 60);
+            int saat = modeday / (60 * 60);
+            int modesaat = saat % (60 * 60);
+            int min = modesaat / 60;
+            int modemin = min % 60;
+            int sec = modemin;
+            Console.WriteLine("day is " + day + "saat is " + saat + "minute is " + min + "second is " + sec);
+
+
+        }
+
+    }
+}
