@@ -1,0 +1,57 @@
+using System;
+
+namespace tamrin1
+{
+    class program
+    {
+        public static void Main(string[] args) //kmm and bmm
+        {
+            Console.WriteLine("Vared Konid 3 adad");
+
+            int a = Convert.ToInt32(Console.ReadLine());
+            int b = Convert.ToInt32(Console.ReadLine());
+            
+            calc(a, b);
+
+
+        }
+        private static void calc(int a, int b)
+        {
+            int c;
+            int  k, m;
+            if (a >= b)
+            {
+                do
+                {
+                    k = a;
+                    m = b;
+                    c = a % b;
+                    a = b;
+                    b = c;
+
+                } while (c != 0);
+                Console.WriteLine("bmm is = " + a);
+                Console.WriteLine("kmm is " + m * k / a);
+            }
+            else
+            {
+                do
+                {
+                    k = b;
+                    m = a;
+                    c = b % a;
+                    b = a;
+                    a = c;
+                } while (c != 0);
+                Console.WriteLine("bmm is = " + b);
+                Console.WriteLine("kmm is =" + m * k / b);
+
+
+            }
+            
+            
+        }
+
+
+    }
+}
